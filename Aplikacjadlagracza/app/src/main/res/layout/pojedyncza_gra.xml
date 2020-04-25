@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textNazwa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nazwa"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LiczbaPartii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textNazwa"
+            android:text="@string/rozegrane_partie" />
+
+        <TextView
+            android:id="@+id/textLiczbaPartii"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@id/textNazwa"
+            android:layout_toRightOf="@+id/LiczbaPartii"
+            android:text="@string/liczba_rozegranych_partii"
+            android:layout_toEndOf="@+id/LiczbaPartii" />
+
+        <TextView
+            android:id="@+id/LiczbaWygranych"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LiczbaPartii"
+            android:text="@string/wygrane_partie" />
+
+        <TextView
+            android:id="@+id/textLiczbaWygranych"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@id/LiczbaPartii"
+            android:layout_toRightOf="@+id/LiczbaWygranych"
+            android:text="@string/liczba_wygranych_partii"
+            android:layout_toEndOf="@+id/LiczbaWygranych" />
+
+        <TextView
+            android:id="@+id/ProcentWygranych"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LiczbaWygranych"
+            android:text="@string/procent_wygranych" />
+
+        <TextView
+            android:id="@+id/textProcentWygranych"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_below="@id/LiczbaWygranych"
+            android:layout_toRightOf="@+id/ProcentWygranych"
+            android:text="@string/procent_wygranych_partii"
+            android:layout_toEndOf="@+id/ProcentWygranych" />
+
+        <TextView
+            android:id="@+id/Procent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LiczbaWygranych"
+            android:layout_toRightOf="@+id/textProcentWygranych"
+            android:text="@string/procent"
+            android:layout_toEndOf="@+id/textProcentWygranych" />
+
+        <ImageButton
+            android:id="@+id/dodajPartieButton"
+            android:layout_width="42dp"
+            android:layout_height="41dp"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/ic_menu_add"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

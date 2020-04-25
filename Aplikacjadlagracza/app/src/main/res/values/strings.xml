@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Aplikacja dla gracza</string>
+    <string name="mojaGraBtn">Moja gra</string>
+    <string name="nazwaMojejGry">Nazwa gry</string>
+    <string name="cenaMojejGry">Cena gry</string>
+    <string name="nazwaGry">Nazwa gry</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="start">Start</string>
+    <string name="gry">Gry</string>
+    <string name="moje_gry">Moje gry</string>
+    <string name="wiecej">Więcej</string>
+    <string name="moje_statystyki">Moje Statystyki</string>
+    <string name="graButton">Gra</string>
+    <string name="nazwa">Nazwa</string>
+    <string name="liczba_rozegranych_partii">Liczba rozegranych partii</string>
+    <string name="liczba_wygranych_partii">Liczba wygranych partii</string>
+    <string name="procent_wygranych_partii">Procent wygranych partii</string>
+    <string name="cena">Cena</string>
+    <string name="cena_jednej_partii">Cena jednej partii</string>
+    <string name="rozegrane_partie">Rozegrane Partie: </string>
+    <string name="wygrane_partie">Wygrane Partie: </string>
+    <string name="procent_wygranych">Procent wygranych: </string>
+    <string name="cena_">Cena:</string>
+    <string name="cena_pojedynczej_partii">Cena pojedynczej partii: </string>
+    <string name="zl">zł</string>
+    <string name="procent">%</string>
+    <string name="wygrana">Wygrana</string>
+    <string name="przegrana">Przegrana</string>
+    <string name="kostki">kostki</string>
+</resources>

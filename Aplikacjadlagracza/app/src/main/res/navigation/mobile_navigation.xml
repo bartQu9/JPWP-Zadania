@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/nav_mojeGry">
+
+    <fragment
+            android:id="@+id/nav_mojeGry"
+            android:name="com.example.aplikacjadlagracza.ui.mojeGry.MojeGryFragment"
+            android:label="Moje gry"
+            tools:layout="@layout/fragment_mojegry" />
+
+    <fragment
+            android:id="@+id/nav_gry"
+            android:name="com.example.aplikacjadlagracza.ui.gry.GryFragment"
+            android:label="Gry"
+            tools:layout="@layout/fragment_gry"/>
+
+    <fragment
+            android:id="@+id/nav_dodajNowaGre"
+            android:name="com.example.aplikacjadlagracza.ui.dodajNowaGre.DodajNowaGreFragment"
+            android:label="Dodaj nową grę"
+            tools:layout="@layout/fragment_dodajnowagre"/>
+
+    <fragment
+        android:id="@+id/nav_oAplikacji"
+        android:name="com.example.aplikacjadlagracza.ui.oAplikacji.OAplikacjiFragment"
+        android:label="O aplikacji"
+        tools:layout="@layout/fragment_oaplikacji"/>
+
+</navigation>

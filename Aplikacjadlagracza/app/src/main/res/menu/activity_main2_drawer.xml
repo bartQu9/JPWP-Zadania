@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_mojeGry"
+                android:icon="@drawable/ic_menu_games"
+                android:title="@string/moje_gry"/>
+        <item
+                android:id="@+id/nav_gry"
+                android:icon="@drawable/ic_menu_games"
+                android:title="@string/gry"/>
+        <item
+                android:id="@+id/nav_dodajNowaGre"
+                android:icon="@drawable/ic_menu_add"
+                android:title="Dodaj nową grę"/>
+    </group>
+
+    <item android:title="@string/wiecej">
+        <menu>
+            <item
+                    android:id="@+id/nav_oAplikacji"
+                    android:icon="@drawable/ic_menu_more"
+                    android:title="O aplikacji"/>
+        </menu>
+    </item>
+
+</menu>
