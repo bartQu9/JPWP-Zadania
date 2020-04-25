@@ -2,6 +2,7 @@ public class Student {
     private String imie;
     private String nazwisko;
     private int nrIndeksu;
+    private int ikonka;
 
     public Student(String imie, String nazwisko, int nrIndeksu, int ikonka) {
         this.imie = imie;
