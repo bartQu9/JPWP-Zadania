@@ -38,8 +38,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE2_NAME);
         onCreate(db);
     }
-    //tutaj metody dodajGre(String nazwa) i dodajMojaGre(String nazwa, double cena)
+    //uzupełnij metody dodajGre(String nazwa) i dodajMojaGre(String nazwa, double cena)
     //wskazówka: początkowa liczba partii wynosi 0, a cena jednej partii jest równa cenie całej gry
+    public boolean dodajMojaGre(String nazwa, double cena) {
+        return false;
+    }
+    public boolean dodajGre(String nazwa) {
+        return false;
+    }
+
+
 
     public boolean dodajPartie(GraMoja graMoja, boolean wygrana){
         int liczbaPartii = graMoja.getLiczbaPartii() + 1;
