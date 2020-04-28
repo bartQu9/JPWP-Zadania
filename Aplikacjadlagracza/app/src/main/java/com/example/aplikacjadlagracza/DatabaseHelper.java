@@ -41,10 +41,32 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     //uzupełnij metody dodajGre(String nazwa) i dodajMojaGre(String nazwa, double cena)
     //wskazówka: początkowa liczba partii wynosi 0, a cena jednej partii jest równa cenie całej gry
     public boolean dodajMojaGre(String nazwa, double cena) {
-        return false;
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        GraMoja nowa_GraMoja = new GraMoja(....);
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_1, nowa_GraMoja.getID());
+        contentValues.put(COL_2, nowa_GraMoja.getNazwa());
+        contentValues.put(COL_3, nowa_GraMoja.getLiczbaPartii());
+        contentValues.put(COL_4, nowa_GraMoja.getLiczbaWygranych());
+        contentValues.put(COL_5, nowa_GraMoja.getProcentWygranych());
+        contentValues.put(COL_5, nowa_GraMoja.getProcentWygranych());
+        contentValues.put(COL_6, nowa_GraMoja.getCena());
+        contentValues.put(COL_7, nowa_GraMoja.getCenaJednejPartii();
+
+        return db.update(TABLE2_NAME, contentValues, COL_1 + " = ?", new String[] {String.valueOf(nowa_GraMoja.getId())});
     }
     public boolean dodajGre(String nazwa) {
-        return false;
+        SQLiteDatabase db = this.getWritableDatabase();
+        Gra nowa_gra = new Gra(....);
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COL_1, nowa_gra.getID());
+        contentValues.put(COL_2, nowa_gra.getNazwa());
+        contentValues.put(COL_3, nowa_gra.getLiczbaPartii());
+        contentValues.put(COL_4, nowa_gra.getLiczbaWygranych());
+        contentValues.put(COL_5, nowa_gra.getProcentWygranych());
+
+        return db.update(TABLE_NAME, contentValues, COL_1 + " = ?", new String[] {String.valueOf(nowa_gra.getId())});
     }
 
 
